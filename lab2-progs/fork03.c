@@ -1,8 +1,5 @@
 /*
-**  file: fork03.c
-**
-**  Paulo Shirley @ UAb
-**  v2008/03/17
+Parent finishes before children
 */
 
 #include <stdio.h>

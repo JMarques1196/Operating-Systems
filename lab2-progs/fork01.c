@@ -1,8 +1,5 @@
 /*
-**  file: fork01.c
-**
-**  Paulo Shirley @ UAb
-**  v2008/03/17
+Forks
 */
 
 #include <stdio.h>
@@ -24,15 +21,30 @@ int main()
    if ( pid ) {
       /* pid>0, codigo especifico para o processo pai */
       printf("Codigo do Pai:   Processo pai tem PID=%5d" \
-         " e o filho tem PID=%5d\n", (int) getpid(), (int) pid);
+         " e o filho tem PID=%5d\n", (int) getpid(), (int) pid);  
+         /*
+         // Pai tem acesso ao codigo do filho atraves de fork: pid = fork()
+         */
    }
    else {
       /* pid=0, codigo especifico para o processo filho */
       printf("Codigo do Filho: Processo pai tem PID=%5d" \
          " e o filho tem PID=%5d\n", (int) getppid(), (int) getpid());
+         /*
+         // Filho tem acesso ao codigo do pai atraves de getppid()
+         */
    }
    
    /* pid irrelevante, codigo para ambos os processos, pai e filho */
    printf("*** Fim ***\n");
    return 0;
 }
+
+/* Output
+Exemplo de aplicacao 01 da funcao fork()
+Processo pai tem PID=34087
+Codigo do Pai:   Processo pai tem PID=34087 e o filho tem PID=34088
+*** Fim ***
+Codigo do Filho: Processo pai tem PID=    1 e o filho tem PID=34088
+*** Fim ***
+*/

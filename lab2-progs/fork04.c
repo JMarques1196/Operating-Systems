@@ -1,8 +1,5 @@
 /*
-**  file: fork04.c
-**
-**  Paulo Shirley @ UAb
-**  v2008/03/20
+
 */
 
 #include <stdio.h>

@@ -1,8 +1,5 @@
 /*
-**  file: exec01.c
-**
-**  Paulo Shirley @ UAb
-**  v2008/03/24
+Create a new process using fork() + exec()
 */
 
 #include <stdio.h>
