@@ -1,0 +1,6 @@
+nt=2
+dim_buffer_ord=2
+dim_buffer_fus=10
+n=20
+# dados
+10 9 8 7 6 5 4 3 2 1 20 19 18 17 16 15 14 13 12 11
