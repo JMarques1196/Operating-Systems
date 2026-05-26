@@ -1,5 +1,5 @@
 # EFolio B - Operating Systems
-**Evaluation:** 5 Values towards the final grade
+**Evaluation:** 25% of the final grade
 
 ## SO efB-25: Multithreaded Merge Sort Algorithm
 
